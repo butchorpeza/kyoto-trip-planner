@@ -74,7 +74,7 @@ body {
 .food { display: grid; grid-template-columns: 1fr 96px; }
 .panel { min-height: 100%; }
 .amber, .amber .filler { color: var(--amber); }
-.price-level { font-size: 1rem; font-weight: 600; }
+.price-level { color: var(--amber); font-weight: 600; }
 
 @media (prefers-reduced-motion: reduce) {
   .thinking span { animation: none; opacity: 0.6; }

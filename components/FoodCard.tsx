@@ -10,16 +10,13 @@ export function FoodCard({ d }: { d: FoodDetails }) {
         <span className="kind">Food</span>
         <p className="biggest amber">
           <Field value={d.meal} />
-          <span className="price-level">
-            {" · "}
-            <Field value={d.priceLevel} />
-          </span>
         </p>
         <Field value={d.placeName} className="line strong" />
         <span className="line muted">
           <Field value={d.cuisine} /> · <Field value={d.neighbourhood} />
         </span>
         <span className="line">
+          <Field value={d.priceLevel} className="price-level" /> ·{" "}
           <Field value={d.estCostFor2Usd} format={(n) => `About ${usd(n)} for 2`} /> ·{" "}
           <Field value={d.walkFromStayMin} format={(m) => `${m} min walk`} />
         </span>
