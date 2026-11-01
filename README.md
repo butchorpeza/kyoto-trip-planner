@@ -6,6 +6,8 @@ A Next.js chat prototype that answers a trip request with stay, Experience and f
 
 Run it locally with `npm install && npm run dev`, then open http://localhost:3000.
 
+The one-page card design spec is in [docs/card-spec.pdf](docs/card-spec.pdf).
+
 ## Fields that use a filler line
 
 When one of these fields has no value in the mock response, the card shows "Not listed yet" in its place instead of a blank or "undefined" (see `components/Field.tsx`).
