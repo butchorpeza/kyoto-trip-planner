@@ -18,7 +18,7 @@ export function Field<T>({
   className?: string;
 }) {
   if (isEmpty(value)) {
-    return <span className={`filler ${className ?? ""}`.trim()}>{FILLER}</span>;
+    return <span className={`${className ?? ""} text-filler italic`.trim()}>{FILLER}</span>;
   }
   const v = value as T;
   return <span className={className}>{format ? format(v) : String(v)}</span>;

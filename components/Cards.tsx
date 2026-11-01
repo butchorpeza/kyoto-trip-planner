@@ -9,7 +9,7 @@ const ORDER = { stay: 0, experience: 1, food: 2 } as const;
 export function Cards({ items }: { items: CardItem[] }) {
   const sorted = [...items].sort((a, b) => ORDER[a.cardType] - ORDER[b.cardType]);
   return (
-    <div className="cards">
+    <div className="flex flex-col gap-3">
       {sorted.map((item) => {
         switch (item.cardType) {
           case "stay":
